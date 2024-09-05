@@ -16,22 +16,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
+      - name: Build Docker image for linting/formatting
+        run: docker build -t linting-formatting .
+
+      - name: Run linting with Docker
+        run: docker run --rm linting-formatting npm run lint
+
+      - name: Run formatting check with Docker
+        run: docker run --rm linting-formatting npm run format -- --check
+
+      - name: Set up Node.js for testing
         uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: '14'
 
-      - name: Install dependencies
+      - name: Install dependencies for testing
         run: npm install
-
-      - name: Lint with ESLint
-        run: npm run lint
-
-      - name: Format code with Prettier
-        run: npm run format -- --check
 
       - name: Test with Jest
         run: npm test
 
       - name: Audit dependencies
         run: npm audit --audit-level=high
+
