@@ -1,5 +1,6 @@
 Today.
 Create a git repo (use our one with husky and docker) (need to add docker here)
+
 - pull latest branch
 
 - Make a folder called .github/ workflows/
@@ -14,12 +15,12 @@ name: Hello World
 
 on:
 pull request:
-  branches:
-  -main
+branches:
+-main
 
-  jobs:
-  say-hello:
-     runs-on: ubuntu-latest //hopefully this works for me
+jobs:
+say-hello:
+runs-on: ubuntu-latest //hopefully this works for me
 
      steps:
      - name: Checkout code
@@ -28,15 +29,11 @@ pull request:
      - name: Say Hello World
      run: echo "Hello World"
 
-
 Do a git push from our terminal
 Go to github and make a pull request to main branch from feature branch
 
-
-
-
-
 General Presentation.
+
 - create github tasks for each github flow?
 - make presentation slides
 - create a github actions page to show the steps flow (possibly in figjam)
