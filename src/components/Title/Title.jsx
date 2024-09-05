@@ -1,4 +1,5 @@
 export default function Title() {
+  console.log('wow');
   return (
     <>
       <h2>
