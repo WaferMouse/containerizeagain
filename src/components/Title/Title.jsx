@@ -2,9 +2,9 @@ export default function Title() {
   console.log('wow');
   return (
     <>
-                                                  <h2>
+      <h2>
         Docs <span>-&gt;</span>
-                                     </h2>
+      </h2>
     </>
   );
 }
