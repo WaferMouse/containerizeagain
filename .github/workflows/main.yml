@@ -28,7 +28,7 @@ jobs:
       - name: Set up Node.js for testing
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: "14"
 
       - name: Install dependencies for testing
         run: npm install
@@ -38,4 +38,3 @@ jobs:
 
       - name: Audit dependencies
         run: npm audit --audit-level=high
-
