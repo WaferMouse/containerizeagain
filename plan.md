@@ -37,3 +37,6 @@ General Presentation.
 - create github tasks for each github flow?
 - make presentation slides
 - create a github actions page to show the steps flow (possibly in figjam)
+
+- rulesets
+- render stage
