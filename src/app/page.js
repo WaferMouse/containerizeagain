@@ -9,9 +9,9 @@ export default function Home() {
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.js</code>
-                                 </p>
-                      <div>
-                                   <a
+        </p>
+        <div>
+          <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
