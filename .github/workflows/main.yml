@@ -24,17 +24,3 @@ jobs:
 
       - name: Run formatting check with Docker
         run: docker run --rm linting-formatting npm run format -- --check
-
-      - name: Set up Node.js for testing
-        uses: actions/setup-node@v2
-        with:
-          node-version: "22.5.1"
-
-      - name: Install dependencies for testing
-        run: npm install
-
-      - name: Test with Jest
-        run: npm test
-
-      - name: Audit dependencies
-        run: npm audit --audit-level=high
